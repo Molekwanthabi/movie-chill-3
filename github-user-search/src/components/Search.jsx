@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { fetchUsers } from './githubService.js';
+import { fetchUsers } from '../services/githubService';
 
 const Search = () => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -19,7 +19,7 @@ const Search = () => {
       const data = await fetchUsers(searchTerm, location, minRepos);
       setUsers(data.items);
     } catch (err) {
-      setError('Error fetching users.');
+      setError('Looks like we cant find the user');
     } finally {
       setLoading(false);
     }
