@@ -1,6 +1,6 @@
 function MainContent() {
   return (
-    <main
+    <Main>
       style={{
         padding: '20px',
         backgroundColor: '#e6f7ff',
