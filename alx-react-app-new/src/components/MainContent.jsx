@@ -8,7 +8,7 @@ function MainContent() {
       }}
     >
       <h2>Main Content</h2>
-      <p>This is where the main content of the app will go.</p>
+      <p>I love to visit New York, Paris, and Tokyo.</p>
     </main>
   );
 }
