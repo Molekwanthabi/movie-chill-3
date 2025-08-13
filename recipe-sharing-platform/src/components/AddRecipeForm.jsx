@@ -6,7 +6,6 @@ const AddRecipeForm = ({ onAddRecipe }) => {
   const [steps, setSteps] = useState("");
   const [errors, setErrors] = useState({});
 
-  // Validation function
   const validateForm = () => {
     let formErrors = {};
     if (!title.trim()) formErrors.title = "Recipe title is required";
@@ -42,7 +41,7 @@ const AddRecipeForm = ({ onAddRecipe }) => {
   };
 
   return (
-    <div className="max-w-xl mx-auto bg-white p-6 rounded-lg shadow-lg mt-8">
+    <div className="max-w-xl mx-auto bg-white p-4 md:p-6 rounded-lg shadow-lg mt-8">
       <h2 className="text-2xl font-bold mb-4 text-center">Add New Recipe</h2>
       <form onSubmit={handleSubmit} className="space-y-4">
         
@@ -53,7 +52,7 @@ const AddRecipeForm = ({ onAddRecipe }) => {
             type="text"
             value={title}
             onChange={(e) => setTitle(e.target.value)}
-            className="w-full p-2 border rounded focus:outline-none focus:ring focus:ring-green-300"
+            className="w-full p-2 md:p-3 border rounded focus:outline-none focus:ring focus:ring-green-300"
             placeholder="e.g., Spaghetti Bolognese"
           />
           {errors.title && (
@@ -67,7 +66,7 @@ const AddRecipeForm = ({ onAddRecipe }) => {
           <textarea
             value={ingredients}
             onChange={(e) => setIngredients(e.target.value)}
-            className="w-full p-2 border rounded focus:outline-none focus:ring focus:ring-green-300"
+            className="w-full p-2 md:p-3 border rounded focus:outline-none focus:ring focus:ring-green-300"
             rows="3"
             placeholder="Separate ingredients with commas"
           />
@@ -82,7 +81,7 @@ const AddRecipeForm = ({ onAddRecipe }) => {
           <textarea
             value={steps}
             onChange={(e) => setSteps(e.target.value)}
-            className="w-full p-2 border rounded focus:outline-none focus:ring focus:ring-green-300"
+            className="w-full p-2 md:p-3 border rounded focus:outline-none focus:ring focus:ring-green-300"
             rows="4"
             placeholder="Describe the preparation process..."
           />
@@ -94,7 +93,7 @@ const AddRecipeForm = ({ onAddRecipe }) => {
         {/* Submit Button */}
         <button
           type="submit"
-          className="w-full bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600 transition-colors"
+          className="w-full md:w-auto bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600 transition-colors"
         >
           Submit Recipe
         </button>
@@ -104,4 +103,3 @@ const AddRecipeForm = ({ onAddRecipe }) => {
 };
 
 export default AddRecipeForm;
-
