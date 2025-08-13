@@ -1,20 +1,20 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import recipesData from "../data.json"; // Make sure data.json is in src/
+import recipesData from "../data.json"; // Make sure data.json is inside src/
 
 const HomePage = () => {
   const [recipes, setRecipes] = useState([]);
 
   useEffect(() => {
-    // Simulate fetching from data.json
+    // Load recipes from data.json when component mounts
     setRecipes(recipesData);
   }, []);
 
   return (
-    <div className="max-w-4xl mx-auto mt-8">
-      <h1 className="text-3xl font-bold mb-6">Recipe List</h1>
+    <div className="max-w-6xl mx-auto mt-8 px-4">
+      <h1 className="text-3xl font-bold mb-6 text-center">Recipe List</h1>
       {recipes.length > 0 ? (
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {recipes.map((recipe) => (
             <div
               key={recipe.id}
@@ -39,11 +39,10 @@ const HomePage = () => {
           ))}
         </div>
       ) : (
-        <p>No recipes available.</p>
+        <p className="text-center">No recipes available.</p>
       )}
     </div>
   );
 };
 
 export default HomePage;
-
