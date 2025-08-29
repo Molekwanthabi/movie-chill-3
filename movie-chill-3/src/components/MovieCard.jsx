@@ -23,7 +23,7 @@ export default function MovieCard({ movie, onClick, onToggleFavorite, isFavorite
       <div className="px-3 pb-3">
         <button
           onClick={onToggleFavorite}
-          className="text-xs px-2 py-1 rounded border border-gray-300 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-700"
+          className="text-xs px-2 py-1 rounded border border-gray-300 dark:border-gray-700 hover:bg-purple-600 dark:hover:bg-gray-700"
           aria-pressed={isFavorite}
           aria-label={isFavorite ? 'Remove from favorites' : 'Add to favorites'}
         >
