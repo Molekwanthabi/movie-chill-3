@@ -5,7 +5,7 @@ const POSTER_FALLBACK = "tps://m.media-amazon.com/images/M/MV5BZGRiMDE1NTMtMThmZ
 export default function MovieCard({ movie, onClick, onToggleFavorite, isFavorite }) {
   const { Title, Year, Poster } = movie
   return (
-    <article className="group rounded-lg overflow-hidden border border-gray-200 dark:border-gray-800 bg-purple-200 dark:bg-gray-800 shadow-soft">
+    <article className="group rounded-lg overflow-hidden border border-gray-200 dark:border-gray-800 bg-purple-200 dark:bg-gray-800 shadow-soft text-white">
       <button onClick={onClick} className="w-full text-left">
         <img
           src={Poster && Poster !== 'N/A' ? Poster : POSTER_FALLBACK}
