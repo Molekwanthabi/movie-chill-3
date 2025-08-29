@@ -17,7 +17,7 @@ export default function MovieCard({ movie, onClick, onToggleFavorite, isFavorite
           <h3 className="font-medium text-sm line-clamp-2 group-hover:underline">
             {Title}
           </h3>
-          <p className="text-xs text-gray-600 dark:text-gray-300">{Year}</p>
+          <p className="text-xs text-white">{Year}</p>
         </div>
       </button>
       <div className="px-3 pb-3">
