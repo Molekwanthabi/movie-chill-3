@@ -80,7 +80,7 @@ Clicking on a movie shows:
 
 ## 📦 Submission
 - GitHub Repo: [movie-chill-3](https://github.com/Molekwanthabi/movie-chill-3)  
-- Deployed App: *(to be added once deployed)*  
+- Deployed App: [https://movie-chill-3-git-master-nthabiseng-molekwas-projects.vercel.app/]
 
 ---
 👨‍💻 Built as part of the **Frontend Capstone Project**.
