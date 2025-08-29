@@ -1,75 +1,89 @@
-FE Capstone Project: Movie Database
-Project Overview:
-As a frontend developer, your goal is to design and implement a Movie Database application using HTML, CSS, JavaScript, and React (with optional Tailwind CSS). The application will allow users to search for movies and view detailed information about them, using a public movie API.
+# 🎬 FE Capstone Project: Movie Database
 
-This project will help you practice integrating external APIs, handling user input, managing state in a dynamic application, and creating a visually appealing and responsive user interface. The project will simulate a real-world development environment, providing valuable experience in frontend web development and deployment.
+## 📖 Project Overview
+The **Movie Database Application** is a frontend project built with **HTML, CSS, JavaScript, and React** (with optional Tailwind CSS).  
+The app allows users to search for movies and view detailed information about them using a public movie API.
 
-Functional Requirements:
-Fetch Movie Data:
+This project helps practice:
+- Integrating external APIs
+- Handling user input
+- Managing state in a dynamic application
+- Creating a visually appealing and responsive UI
+- Simulating a real-world development workflow
 
-Use a public movie API like the OMDB API to fetch movie data based on user search queries.
-Display a list of movies matching the search criteria, showing key information such as:
-Movie Poster: A thumbnail image of the movie poster.
-Title: The title of the movie.
-Release Date: The year the movie was released.
-Movie Details View:
+---
 
-When a user clicks on a movie from the list, display a detailed view with additional information, including:
-Plot Summary: A brief description of the movie plot.
-Cast: Main actors and their roles.
-Ratings: Ratings from different sources (e.g., IMDB, Rotten Tomatoes).
-Genre: Categories the movie belongs to (e.g., Action, Drama, Comedy).
-Search Functionality:
+## ✅ Functional Requirements
 
-Implement a search bar that allows users to type in a movie name and retrieve relevant search results.
-Handle cases where no movies match the search query by displaying a user-friendly message.
-Responsive UI Design:
+### 🔎 Fetch Movie Data
+- Use a public movie API (e.g., **OMDB API**) to fetch movie data.
+- Display a list of movies matching the search query with:
+  - Movie Poster (thumbnail)
+  - Title
+  - Release Year
 
-Use Tailwind CSS to design a responsive layout that adapts to different screen sizes (e.g., desktop, tablet, mobile).
-Ensure that the movie list and details view are easy to navigate on all devices.
-Error Handling:
+### 🎥 Movie Details View
+Clicking on a movie shows:
+- Plot Summary  
+- Cast (main actors and roles)  
+- Ratings (IMDB, Rotten Tomatoes, etc.)  
+- Genre(s)  
 
-Implement error handling for scenarios such as network issues, invalid API responses, or no search results.
-Display clear error messages to the user when necessary.
-Technical Requirements:
-Project Setup:
+### 🔍 Search Functionality
+- Search bar for users to type in a movie name.  
+- Handle "no results found" with a friendly message.  
 
-Set up a React project using tools like vite or configure a custom setup.
-Install and configure Tailwind CSS for styling, or use another CSS framework if preferred.
-API Integration:
+### 📱 Responsive UI Design
+- Built with **Tailwind CSS** for responsiveness.  
+- Optimized for desktop, tablet, and mobile.  
 
-Sign up for an API key on OMDB or another movie service.
-Use fetch or axios to request data from the movie API and handle asynchronous data fetching.
-Display the fetched movie data in a structured and visually appealing format.
-User Interface Components:
+### ⚠️ Error Handling
+- Handle network/API errors gracefully.  
+- Display clear error messages for users.  
 
-Create reusable components for the movie list and movie details, such as SearchBar, MovieCard, and MovieDetails.
-Design a cohesive layout using Tailwind CSS, ensuring consistency in colors, typography, and spacing.
-State Management:
+---
 
-Use React’s state management hooks (useState and useEffect) to handle data fetching, user input, and UI updates.
-Optionally, explore more advanced state management tools like Zustand, Redux or mobx-state-tree if the application grows in complexity.
-Deployment:
+## 🛠 Technical Requirements
 
-Deploy the completed application on a free hosting platform like Netlify or Vercel.
-Ensure the application is accessible and performs well in the deployed environment.
-Share the deployment link as part of your project submission.
-Stretch Goals (Optional):
-Favorites List:
+### 🚀 Project Setup
+- Create a React project (e.g., with **Vite**).  
+- Install and configure **Tailwind CSS** for styling.  
 
-Implement a feature that allows users to add movies to a personal favorites list, stored in local storage.
-Pagination for Search Results:
+### 🌐 API Integration
+- Sign up for an **OMDB API key** (or another movie service).  
+- Fetch data with `fetch` or `axios`.  
 
-Implement pagination for search results to handle large datasets efficiently, allowing users to navigate through multiple pages of movies.
-Sorting and Filtering:
+### 🎨 UI Components
+- **SearchBar** – for entering queries  
+- **MovieCard** – displays poster, title, and year  
+- **MovieDetails** – full details of a selected movie  
 
-Add sorting options for search results (e.g., by release date, ratings) and filtering by genre or year.
-Movie Trailers:
+### ⚛️ State Management
+- Use React hooks (`useState`, `useEffect`).  
+- Optionally explore advanced tools like Zustand or Redux.  
 
-Include a section in the movie details view to display a trailer from YouTube or another video source.
-Theme Customization:
+### 🌍 Deployment
+- Deploy to **Netlify** or **Vercel**.  
+- Share deployment link as part of project submission.  
 
-Implement light/dark mode functionality to enhance the user experience based on their preferences.
-Internationalization:
+---
 
-Add support for multiple languages, allowing users to view movie information in their preferred language.
+## 🌟 Stretch Goals (Optional)
+- ⭐ **Favorites List** – Save favorite movies (local storage).  
+- 📑 **Pagination** – Navigate through multiple result pages.  
+- 🏷 **Sorting & Filtering** – By release date, ratings, or genre.  
+- 🎞 **Movie Trailers** – Embed trailers (YouTube, etc.).  
+- 🌓 **Theme Customization** – Light/Dark mode toggle.  
+- 🌐 **Internationalization** – Support multiple languages.  
+
+---
+
+## 📦 Submission
+- GitHub Repo: [movie-chill-3](https://github.com/Molekwanthabi/movie-chill-3)  
+- Deployed App: *(to be added once deployed)*  
+
+---
+👨‍💻 Built as part of the **Frontend Capstone Project**.
+
+
+
