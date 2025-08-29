@@ -11,7 +11,7 @@ export default function SearchBar({ query, onQueryChange, onSubmit, loading }) {
         onChange={e => onQueryChange(e.target.value)}
         onKeyDown={handleKey}
         placeholder="Search for movies"
-        className="flex-1 h-11 px-3 rounded-md border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-indigo-500 text-white"
+        className="flex-1 h-11 px-3 rounded-md border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-indigo-500"
         aria-label="Search movies"
       />
       <button
