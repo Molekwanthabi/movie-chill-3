@@ -1,6 +1,6 @@
 import React from 'react'
 
-const POSTER_FALLBACK = "tps://m.media-amazon.com/images/M/MV5BZGRiMDE1NTMtMThmZS00YjE4LWI1ODQtNjRkZGZlOTg2MGE1XkEyXkFqcGc@._V1_SX300.jpg"
+const POSTER_FALLBACK = "https://m.media-amazon.com/images/M/MV5BZGRiMDE1NTMtMThmZS00YjE4LWI1ODQtNjRkZGZlOTg2MGE1XkEyXkFqcGc@._V1_SX300.jpg"
 
 export default function MovieCard({ movie, onClick, onToggleFavorite, isFavorite }) {
   const { Title, Year, Poster } = movie
