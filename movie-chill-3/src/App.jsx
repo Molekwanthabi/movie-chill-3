@@ -18,7 +18,7 @@ export default function App() {
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState('')
   const [selected, setSelected] = useState(null)
-  const [sortBy, setSortBy] = useState('relevance') // relevance | year_asc | year_desc | title_asc | title_desc
+  const [sortBy, setSortBy] = useState('relevance') 
   const [favorites, setFavorites] = useLocalStorage('favorites', [])
   const [yearFilter, setYearFilter] = useState('')
   const [isDark, setIsDark] = useLocalStorage('prefers-dark', false)
