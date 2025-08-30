@@ -13,7 +13,7 @@ export default function Pagination({ page, total, pageSize = 10, onPageChange })
     window.scrollTo({ top: 0, behavior: 'smooth' })
   }
 
-  // generate a compact page list
+  
   const pages = []
   const windowSize = 2
   const start = Math.max(1, page - windowSize)
