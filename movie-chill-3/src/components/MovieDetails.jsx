@@ -41,7 +41,7 @@ export default function MovieDetails({ movie, onClose, onToggleFavorite, isFavor
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 p-4">
           <section>
             <h3 className="font-semibold">Plot</h3>
-            <p className="text-sm mt-1 leading-6">{Plot}</p>
+            <p className="text-sm mt-1 leading-6 text-white">{Plot}</p>
             <div className="mt-3 text-sm">
               <div><span className="font-medium">Actors:</span> {Actors}</div>
               {Director && <div><span className="font-medium">Director:</span> {Director}</div>}
